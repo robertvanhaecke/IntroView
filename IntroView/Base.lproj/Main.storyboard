@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Walkthrough View Controller-->
+        <scene sceneID="ORE-LO-Cec">
+            <objects>
+                <viewController storyboardIdentifier="Walkthrough" id="f31-Oy-Whm" customClass="BWWalkthroughViewController" customModule="BWWalkthrough" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9CG-gT-IGe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="8RA-3c-dBn">
+                                <rect key="frame" x="188" y="605" width="39" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="8RA-3c-dBn" firstAttribute="leading" secondItem="nSi-H8-a0x" secondAttribute="leading" constant="188" id="Chx-Z7-6Ha"/>
+                            <constraint firstItem="nSi-H8-a0x" firstAttribute="trailing" secondItem="8RA-3c-dBn" secondAttribute="trailing" constant="187" id="d6P-VO-1fF"/>
+                            <constraint firstItem="nSi-H8-a0x" firstAttribute="bottom" secondItem="8RA-3c-dBn" secondAttribute="bottom" constant="94" id="nFC-TL-FjN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nSi-H8-a0x"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="8RA-3c-dBn" id="hG4-yf-TS4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BUe-Ga-qTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="-700"/>
+        </scene>
+        <!--Walkthrough Page View Controller-->
+        <scene sceneID="dc1-6r-UnD">
+            <objects>
+                <viewController storyboardIdentifier="Intro" id="ZX8-rf-zqI" customClass="BWWalkthroughPageViewController" customModule="BWWalkthrough" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JHZ-Me-hfX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ivan is een ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCk-6B-ert">
+                                <rect key="frame" x="158" y="358" width="99" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.55743065599859065" green="0.78628545895076973" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PCk-6B-ert" firstAttribute="centerY" secondItem="8eR-wd-FhI" secondAttribute="centerY" constant="-9.5" id="ZGl-y4-WFm"/>
+                            <constraint firstItem="PCk-6B-ert" firstAttribute="centerX" secondItem="8eR-wd-FhI" secondAttribute="centerX" id="cF8-oN-IZE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8eR-wd-FhI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K1q-gq-E2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1387" y="-700"/>
+        </scene>
+        <!--Walkthrough Page View Controller-->
+        <scene sceneID="N2g-f6-PzP">
+            <objects>
+                <viewController storyboardIdentifier="IntroReveal" id="bKR-TY-DHK" customClass="BWWalkthroughPageViewController" customModule="BWWalkthrough" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jej-gf-kNh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GirlSymbol" translatesAutoresizingMaskIntoConstraints="NO" id="V41-Qj-ECp">
+                                <rect key="frame" x="133.66666666666666" y="148" width="146.99999999999997" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="RPB-KN-Rek"/>
+                                    <constraint firstAttribute="width" constant="147" id="ljx-PQ-S0A"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meisje" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CV6-GH-gTb">
+                                <rect key="frame" x="20" y="358" width="374" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.73100268563233683" blue="0.81611518215215273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lPE-yh-Pme" firstAttribute="trailing" secondItem="CV6-GH-gTb" secondAttribute="trailing" constant="20" id="FgJ-fp-EhT"/>
+                            <constraint firstItem="V41-Qj-ECp" firstAttribute="centerX" secondItem="lPE-yh-Pme" secondAttribute="centerX" id="YKY-Hc-TYg"/>
+                            <constraint firstItem="CV6-GH-gTb" firstAttribute="leading" secondItem="lPE-yh-Pme" secondAttribute="leading" constant="20" id="p39-ad-YvM"/>
+                            <constraint firstItem="CV6-GH-gTb" firstAttribute="top" secondItem="V41-Qj-ECp" secondAttribute="bottom" constant="33" id="qiZ-4f-xnS"/>
+                            <constraint firstItem="V41-Qj-ECp" firstAttribute="top" secondItem="lPE-yh-Pme" secondAttribute="top" constant="128" id="uTH-5L-Vj3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lPE-yh-Pme"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ig-3L-c2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2043" y="-700"/>
+        </scene>
+        <!--Walkthrough Page View Controller-->
+        <scene sceneID="FNe-VY-0bs">
+            <objects>
+                <viewController storyboardIdentifier="IntroEnd" id="h1W-aP-FoS" customClass="BWWalkthroughPageViewController" customModule="BWWalkthrough" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aw9-Nv-07M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ivan@weblighting.be" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5g-6M-Ijr">
+                                <rect key="frame" x="128" y="358" width="158.33333333333337" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23879715086749576" green="0.6328098093633473" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="l5g-6M-Ijr" firstAttribute="centerX" secondItem="6mK-hg-uf6" secondAttribute="centerX" id="1c3-4b-0Vh"/>
+                            <constraint firstItem="l5g-6M-Ijr" firstAttribute="centerY" secondItem="6mK-hg-uf6" secondAttribute="centerY" constant="-9.5" id="7JP-x8-mf1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6mK-hg-uf6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ML7-gI-aSi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2694" y="-700"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IntroView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GirlSymbol" width="666" height="666"/>
+    </resources>
+</document>
