@@ -1,6 +1,0 @@
-framework module Pods_IntroView {
-  umbrella header "Pods-IntroView-umbrella.h"
-
-  export *
-  module * { export * }
-}
